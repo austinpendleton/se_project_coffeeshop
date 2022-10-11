@@ -35,7 +35,8 @@
   font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
-  margin-top: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 80px;
   max-width: 683px;
 }
@@ -48,27 +49,21 @@
   z-index: -1;
 }
 .header__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 80px;
+  bottom: 40px;
+  position: absolute;
+  box-sizing: border-box;
+}
+.header__paragraph {
+  margin: 0;
+  font-style: normal;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 80px;
-}
-.header__hours {
-  margin-bottom: 0;
-  margin-left: 80px;
-  margin-top: 0;
-  align-self: flex-start;
-}
-.header__address {
-  align-self: flex-end;
-  margin-right: 80px;
-  margin-bottom: 40px;
-  margin-top: 0;
 }

@@ -9,13 +9,9 @@
     <meta name="autho" content="Austin Pendleton" />
     <title>Practicum Coffee Shop</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
@@ -48,30 +44,28 @@
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__hours">Hours:</p>
-          <p class="header__hours">Monday - Friday (10:00-19:00)</p>
-          <p class="header__hours">Saturday - Sunday (11:00-18:00)</p>
+          <div class="header__hours">
+          <p class="header__paragraph">Hours:</p>
+          <p class="header__paragraph">Monday - Friday (10:00-19:00)</p>
+          <p class="header__paragraph">Saturday - Sunday (11:00-18:00)</p>
         </div>
-        <p class="header__address">200 Success Avenue, The Town of Practicum</p>
+        <p class="header__paragraph">200 Success Avenue, The Town of Practicum</p>
+        </div>
       </header>
       <main>
         <section class="menu" id="menu">
-          <div class="menu__title">
-            <h2>Menu</h2>
-          </div>
-          <div class="menu__subtitle">
-            <h3>
+            <h2 class="menu__title">Menu</h2>     
+            <p class ="menu__subtitle">
               We brew coffee from locally roasted, Fairtrade certified beans and
               use biodegradable cups. All teas from our collection are $2/cup.
-            </h3>
-          </div>
+            </p>    
           <div class="menu__cards">
             <div class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
                   Regular (12 oz)
-                  <div class="card__list-item"></div>
+                  <div class="card__list-divider"></div>
                   $1
                 </li>
                 <li class="card__list-item">
@@ -158,17 +152,12 @@
             </div>
           </div>
         </section>
-
-        <section class="recipes" id="recipes">
-          <div class="recipes__title">
-            <h2>Recipes</h2>
-          </div>
-          <div class="recipes__subtitle">
-            <h3>
+        <section class="recipes" id="recipes">  
+            <h2 class="recipes__title">Recipes</h2>         
+            <p class="recipes__subtitle">
               Check out some recipes we've collected for your home-brewing
               convenience:
-            </h3>
-          </div>
+            </p>    
           <div class="recipes__videos">
             <div class="recipes__video">
               <iframe
@@ -177,10 +166,10 @@
                 allowfullscreen
               >
               </iframe>
-              <ul class="recipes__video-captions">
-                <li class="recipes__video-caption">Aeropress recipe</li>
-                <li class="recipes__video-caption">~5 min</li>
-              </ul>
+              <p class="recipes__video-captions">
+                <span class="recipes__video-caption">Aeropress recipe</li>
+                <span class="recipes__video-caption">~5 min</li>
+              </p>
             </div>
             <div class="recipes__video">
               <iframe
@@ -189,10 +178,10 @@
                 allowfullscreen
               >
               </iframe>
-              <ul class="recipes__video-captions">
-                <li class="recipes__video-caption">French press recipe</li>
-                <li class="recipes__video-caption">~15 min</li>
-              </ul>
+              <p class="recipes__video-captions">
+                <span class="recipes__video-caption">French press recipe</li>
+                <span class="recipes__video-caption">~15 min</li>
+              </p>
             </div>
           </div>
         </section>
@@ -204,7 +193,7 @@
                 Name *
                 <input
                   type="text"
-                  id="name"
+                  
                   class="form__input"
                   placeholder="Name Surname"
                 />
@@ -212,7 +201,8 @@
               <label for="guests" class="form__label">
                 Number of guests *
                 <input
-                  id="guests"
+                  min="1"
+                  max="8"
                   class="form__input"
                   type="number"
                   placeholder="1-8"
@@ -230,10 +220,9 @@
                   type="email"
                   placeholder="email@email.com"
                 />
-              </label>
-              <button class="form__button" type="submit">Book a Table</button>
+              </label>  
             </fieldset>
-            <fieldset class="form__fieldset"></fieldset>
+            <fieldset class="form__fieldset"> <button class="form__button" type="submit">Book a Table</button></fieldset>
             <fieldset class="form__fieldset">
               <label class="form__label form__label_type_checkbox">
                 <input type="checkbox" class="form__checkbox" />
@@ -261,6 +250,7 @@
             </p>
           </div>
         </section>
+      </main>
         <footer class="footer">
           <div class="footer__content">
             <img
@@ -301,8 +291,7 @@
             </div>
           </div>
           <p class="footer__copyright">&copy; 2022 Austin Pendleton</p>
-        </footer>
-      </main>
+        </footer> 
     </div>
   </body>
 </html>

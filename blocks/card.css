@@ -27,14 +27,11 @@
   line-height: 20px;
   color: #ffffff;
 }
-.card__list-item:first-of-type {
-  margin-top: 0px;
+.card__list-item:last-child {
+  padding-bottom: 0;
 }
 .card__list-divider {
   flex-grow: 1;
   margin: 0 10px 0 10px;
   border-bottom: 1px solid white;
-}
-.card:last-child {
-  margin-bottom: 100px;
 }
