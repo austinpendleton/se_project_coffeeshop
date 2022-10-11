@@ -9,9 +9,9 @@
     <meta name="autho" content="Austin Pendleton" />
     <title>Practicum Coffee Shop</title>
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
@@ -45,20 +45,22 @@
         />
         <div class="header__footer">
           <div class="header__hours">
-          <p class="header__paragraph">Hours:</p>
-          <p class="header__paragraph">Monday - Friday (10:00-19:00)</p>
-          <p class="header__paragraph">Saturday - Sunday (11:00-18:00)</p>
-        </div>
-        <p class="header__paragraph">200 Success Avenue, The Town of Practicum</p>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday - Friday (10:00-19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00-18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Practicum
+          </p>
         </div>
       </header>
       <main>
         <section class="menu" id="menu">
-            <h2 class="menu__title">Menu</h2>     
-            <p class ="menu__subtitle">
-              We brew coffee from locally roasted, Fairtrade certified beans and
-              use biodegradable cups. All teas from our collection are $2/cup.
-            </p>    
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+          </p>
           <div class="menu__cards">
             <div class="card">
               <h3 class="card__title">Filter</h3>
@@ -152,12 +154,12 @@
             </div>
           </div>
         </section>
-        <section class="recipes" id="recipes">  
-            <h2 class="recipes__title">Recipes</h2>         
-            <p class="recipes__subtitle">
-              Check out some recipes we've collected for your home-brewing
-              convenience:
-            </p>    
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
           <div class="recipes__videos">
             <div class="recipes__video">
               <iframe
@@ -167,8 +169,8 @@
               >
               </iframe>
               <p class="recipes__video-captions">
-                <span class="recipes__video-caption">Aeropress recipe</li>
-                <span class="recipes__video-caption">~5 min</li>
+                <span class="recipes__video-caption">Aeropress recipe</span>
+                <span class="recipes__video-caption">~5 min</span>
               </p>
             </div>
             <div class="recipes__video">
@@ -179,8 +181,8 @@
               >
               </iframe>
               <p class="recipes__video-captions">
-                <span class="recipes__video-caption">French press recipe</li>
-                <span class="recipes__video-caption">~15 min</li>
+                <span class="recipes__video-caption">French press recipe</span>
+                <span class="recipes__video-caption">~15 min</span>
               </p>
             </div>
           </div>
@@ -193,7 +195,7 @@
                 Name *
                 <input
                   type="text"
-                  
+                  id="name"
                   class="form__input"
                   placeholder="Name Surname"
                 />
@@ -201,6 +203,7 @@
               <label for="guests" class="form__label">
                 Number of guests *
                 <input
+                  id="guests"
                   min="1"
                   max="8"
                   class="form__input"
@@ -220,9 +223,11 @@
                   type="email"
                   placeholder="email@email.com"
                 />
-              </label>  
+              </label>
             </fieldset>
-            <fieldset class="form__fieldset"> <button class="form__button" type="submit">Book a Table</button></fieldset>
+            <fieldset class="form__fieldset">
+              <button class="form__button" type="submit">Book a Table</button>
+            </fieldset>
             <fieldset class="form__fieldset">
               <label class="form__label form__label_type_checkbox">
                 <input type="checkbox" class="form__checkbox" />
@@ -251,47 +256,47 @@
           </div>
         </section>
       </main>
-        <footer class="footer">
-          <div class="footer__content">
-            <img
-              class="footer__logo"
-              src="./images/practicum_logo.svg"
-              alt="Practicum Footer Logo"
-            />
-            <div class="footer__social-media">
-              <h2 class="footer__social-heading">Social Media</h2>
-              <ul class="footer__list">
-                <li class="footer__list-item">
-                  <a
-                    href="https://www.facebook.com/PracticumUSA/"
-                    class="footer__social-link"
-                  >
-                    <img
-                      class="footer__social-icon"
-                      src="./images/facebook_white.svg"
-                      alt="Facebook Logo"
-                    />
-                    Facebook
-                  </a>
-                </li>
-                <li class="footer__list-item">
-                  <a
-                    href="https://www.instagram.com/yndx.practicum/?hl=en"
-                    class="footer__social-link"
-                  >
-                    <img
-                      class="footer__social-icon"
-                      src="./images/instagram_white.svg"
-                      alt="Instagram Logo"
-                    />
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <img
+            class="footer__logo"
+            src="./images/practicum_logo.svg"
+            alt="Practicum Footer Logo"
+          />
+          <div class="footer__social-media">
+            <h2 class="footer__social-heading">Social Media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a
+                  href="https://www.facebook.com/PracticumUSA/"
+                  class="footer__social-link"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Facebook Logo"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a
+                  href="https://www.instagram.com/yndx.practicum/?hl=en"
+                  class="footer__social-link"
+                >
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Instagram Logo"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
           </div>
-          <p class="footer__copyright">&copy; 2022 Austin Pendleton</p>
-        </footer> 
+        </div>
+        <p class="footer__copyright">&copy; 2022 Austin Pendleton</p>
+      </footer>
     </div>
   </body>
 </html>
