@@ -5,6 +5,7 @@
   flex-direction: column;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
@@ -20,7 +21,6 @@
   margin-top: 202px;
   margin-left: 80px;
   margin-bottom: 28px;
-
   z-index: 2;
 }
 .header__span-accent {
@@ -54,8 +54,8 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 80px;
-  bottom: 40px;
-  position: absolute;
+  margin-bottom: 40px;
+  margin-top: auto;
   box-sizing: border-box;
 }
 .header__paragraph {

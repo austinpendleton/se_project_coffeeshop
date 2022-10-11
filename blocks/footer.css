@@ -9,6 +9,7 @@
   margin-left: 80px;
   margin-right: 100px;
   margin-top: 0;
+  padding-top: 60px;
 }
 .footer__logo {
   width: 116px;
@@ -33,7 +34,6 @@
   line-height: 20px;
   list-style: none;
 }
-
 .footer__social-icon {
   height: 16px;
   width: 16px;
@@ -48,10 +48,12 @@
   text-decoration: none;
   color: white;
 }
-.footer__list-item:first-child {
+.footer__list-item {
   margin-bottom: 16px;
 }
-
+.footer__list-item:last-child {
+  margin-bottom: 0;
+}
 .footer__social-link:hover {
   color: #c1c1c1;
   text-decoration: none;
